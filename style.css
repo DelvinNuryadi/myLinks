@@ -1,0 +1,117 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: black;
+   color: white;
+   max-height: 2000px;
+   display: flex;
+   justify-content: center;
+}
+
+.container {
+   width: 1200px;
+   padding: 50px;
+   /* border: 2px solid red; */
+   display: flex;
+   flex-direction: column;
+   /* text-align: center; */
+   justify-content: center;
+}
+
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+.header .img-profile {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-bottom: 10px;
+}
+
+.header .img-profile img {
+   width: 150px;
+}
+
+.links {
+   text-align: center;
+   font-size: 30px;
+   color: rgb(206, 0, 206);
+   margin-bottom: 20px;
+}
+
+.link-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+}
+
+.card a {
+   color: white;
+   text-decoration: none;
+}
+
+.card .cover {
+   text-align: center;
+   padding: 30px 40px;
+   border-radius: 10px;
+   transition: 0.3s;
+}
+
+/* ganti warna cover card */
+.card1 .cover {
+   background: linear-gradient(56deg, #560edb, #cd8b3b);
+}
+
+.card2 .cover {
+   background: linear-gradient(146deg, #4338d8, #cb2ad6);
+}
+
+.card3 .cover {
+   background: linear-gradient(226deg, #c22ebb, #4b9dcc);
+}
+
+.card4 .cover {
+   background: linear-gradient(172deg, #4e39db, #019471);
+}
+
+.card5 .cover {
+   background: linear-gradient(115deg, #5922ee, #bd68c4);
+}
+
+footer {
+   margin-top: 70px;
+   text-align: center;
+   font-size: 15px;
+}
+
+footer a {
+   text-decoration: none;
+   color: rgb(197, 0, 232);
+   font-weight: bolder;
+}
+
+/* hover link */
+.card h1:hover,
+.card p:hover {
+   color: rgb(124, 0, 124);
+}
+
+.card .cover:hover {
+   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+   .link-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
